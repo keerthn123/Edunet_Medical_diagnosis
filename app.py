@@ -36,13 +36,13 @@ selected_disease = st.sidebar.selectbox(
 
 # Load the correct model and scaler
 if selected_disease == "Parkinson's Disease":
-    model, scaler = load_model_and_scaler('E:/Edunet/pkl/best_model_P.pkl', 'E:/Edunet/Scaler/scaler_P.pkl')
+    model, scaler = load_model_and_scaler('pkl/best_model_P.pkl', 'Scaler/scaler_P.pkl')
 elif selected_disease == "Heart Disease":
-    model, scaler = load_model_and_scaler('E:/Edunet/pkl/best_model.pkl', 'E:/Edunet/Scaler/scaler.pkl')
+    model, scaler = load_model_and_scaler('pkl/best_model.pkl', 'Scaler/scaler.pkl')
 elif selected_disease == "Breast Cancer":
-    model, scaler = load_model_and_scaler('E:/Edunet/pkl/best_model_can.pkl', 'E:/Edunet/Scaler/scaler_can.pkl')
+    model, scaler = load_model_and_scaler('pkl/best_model_can.pkl', 'Scaler/scaler_can.pkl')
 else:
-    model, scaler = load_model_and_scaler('E:/Edunet/pkl/best_model_Dia.pkl', 'E:/Edunet/Scaler/scaler_Dia.pkl')
+    model, scaler = load_model_and_scaler('pkl/best_model_Dia.pkl', 'Scaler/scaler_Dia.pkl')
 
 # Feature inputs for each disease
 features = {
